@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CrCl Calculator</title>
+        <meta charset = "UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+      </head>
+      <body>
+        <h1>CrCl Calculator</h1><h3>C G W</h3>
+        <div class="container">
+         <div class="cell cell-1">
+          <form id = "getCrcl">
+            <input id ="age" type = "text" placeholder = "Age of the patient">
+            <br>
+            <input id ="weight" type = "text" placeholder = "Weight in kg">
+            <br>
+            <input id ="scr" type = "text" placeholder = "SCr in mg/dL">
+            <br>
+            <label for="male" id="male-label">
+                <input id="male" type="radio" name = "male-female">Male</label>
+            <label for="female" id="female-label">
+                <input id="female" type="radio" name = "male-female">Female</label>
+            <br>
+            <button id="btn" type="submit">get CrCl!</button>
+        </form>
+        <div id="output"></div>
+       </div>
+       <div class="cell cell-2">
+         <p>Weight... Which wait should I use...?</p>
+         <p>Well.. Is the patient obese?</p>
+         <form id="obesity">
+           <input id="weight1" type="text" placeholder="Actual weight in kg"> <input id="height1" type="text" placeholder="Height in inches"><br>
+           <button id="btn1" type="submit">Let's find out</button>
+           </form>
+         <div id="output1"></div>
+       </div>
+      </div>
+      </body>
+</html>
